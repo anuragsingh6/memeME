@@ -16,6 +16,15 @@ function App() {
     }
   }
 
+  function uploadImage(){
+    let filedialog=document.createElement('input');filedialog.type='file';filedialog.accept='image/*';filedialog.click();
+    filedialog.onchange=e=>{
+      let file=e.target.files[0];let filereader= new FileReader();filereader.readAsBinaryString(file);
+      filereader.onload=readerEvent=>{let baseimage=readerEvent.target.result;
+        document.getElementById('baseimage').style.backgroundImage=baseimage;}
+    }
+  }
+
   return (
     <>
     <div className="app ui-element dark">
@@ -29,10 +38,16 @@ function App() {
           <h1>OR</h1>
           <br />
           <h1>Upload Custom Image</h1>
-          <button style={{fontSize:"2.5vh"}}>Upload Image</button>
+          <button style={{fontSize:"2.5vh"}} onClick={uploadImage}>Upload Image</button>
+          <div id='baseimage'></div>
         </div>
         :<div className="create">
           </div>}
+      </div>
+      <div className="footer">
+        <a href="https://www.github.com/anuragsingh6/memeME">Add images to library</a>
+        <a href="https://www.github.com/anuragsingh6/">&copy; Anurag Singh</a>
+        <a href="https://www.github.com/anuragsingh6/memeME">Report a bug</a>
       </div>
     </div>
     </>

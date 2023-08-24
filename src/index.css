@@ -1,8 +1,9 @@
 html,body,#root,.app{min-height:100vh;}
-html,body,#root,.app,.content,.prep,.create{height:auto;width:100%;margin:0;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:sans-serif;}
+html,body,#root,.app,.content,.prep,.create,.footer{height:auto;width:100%;margin:0;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:sans-serif;}
 .navbar{height:auto;width:90%;font-weight:bold;display:flex;align-content:center;justify-content:space-between;}
 #navbarName,#navbarToggleUIMode{padding:2%;display:flex;align-content:center;flex-wrap:wrap;}
 #navbarName{font-size:3vh;}
-.content{min-height:80vh;padding-bottom:10vh;}.prep,.create{height:100%;}
+.content{min-height:70vh;padding-bottom:10vh;}.prep,.create{height:100%;}
 .library{height:200vh;}
 .ui-element.dark{color:white;background-color:#333333;}.ui-element.light{color:black;background-color:white;}
+.footer{width:90%;padding-bottom:5vh;flex-direction:row;justify-content:space-between;}.footer>a{all:unset;cursor:pointer;}
