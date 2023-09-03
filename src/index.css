@@ -1,5 +1,6 @@
 html,body,#root,.app{min-height:100vh;}
 html,body,#root,.app,.content,.prep,.create,.footer{height:auto;width:100%;margin:0;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:sans-serif;}
+h1{text-align:center;}
 .navbar{height:auto;width:90%;font-weight:bold;display:flex;align-content:center;justify-content:space-between;}
 #navbarName,#navbarToggleUIMode{padding:2%;display:flex;align-content:center;flex-wrap:wrap;}
 #navbarName{font-size:3vh;}
@@ -7,3 +8,7 @@ html,body,#root,.app,.content,.prep,.create,.footer{height:auto;width:100%;margi
 .library{height:200vh;}
 .ui-element.dark{color:white;background-color:#333333;}.ui-element.light{color:black;background-color:white;}
 .footer{width:90%;padding-bottom:5vh;flex-direction:row;justify-content:space-between;}.footer>a{all:unset;cursor:pointer;}
+#baseimageContainer[open]{display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#baseimageContainer::backdrop{background-image:radial-gradient(#333333,#00000000);}
+button{font-size:2.5vh;}
+.baseimageButtonContainer{width:100%;padding-top:3%;display:flex;flex-direction:row;justify-content:space-evenly;}
